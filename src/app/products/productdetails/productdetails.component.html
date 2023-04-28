@@ -1,0 +1,11 @@
+<div class="p-5 border">
+
+    <p class="display-5">{{data.name}}</p>
+    <p>ID : {{data.id}}</p>
+    <p>Product : {{data.name}}</p>
+    <p>Price : {{data.price}}</p>
+    <p><button class="btn btn-primary" [routerLink]="['./spec',data.id]">Specific Details</button></p>
+</div>
+<div class="mt-3">
+    <router-outlet></router-outlet>
+</div>

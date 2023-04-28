@@ -1,0 +1,16 @@
+<table>
+    <caption></caption>
+    <tr>
+        <th class="{{classes}}">Id</th>
+        <th class="{{classes}}">Name</th>
+        <th class="{{classes}}">Price</th>
+        <th class="{{classes}}">More Details</th>
+    </tr>
+    <tr *ngFor="let item of list">
+        <td class="{{classes}}"> {{item.id}} </td>
+        <td class="{{classes}}"> {{item.name}} </td>
+        <td class="{{classes}}"> {{item.price}} </td>
+        <td class="{{classes}}" [routerLink]="['products',item.id]"> <button class="btn btn-secondary">More Details About {{item.name}}</button> </td>
+    </tr>
+</table>
+<router-outlet></router-outlet>
